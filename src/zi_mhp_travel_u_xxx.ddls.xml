@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DDLS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DDLS>
+    <NAME>ZI_MHP_TRAVEL_U_XXX</NAME>
+    <DESCRIPTION>Travel view - CDS data model</DESCRIPTION>
+    <LANGUAGE>EN</LANGUAGE>
+    <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+    <SOURCE_TYPE>V</SOURCE_TYPE>
+    <DDL_SOURCE_TYPE>V</DDL_SOURCE_TYPE>
+    <TOOL_SOURCE_ORIGIN_DESCRIPTION>ABAP Development Tools</TOOL_SOURCE_ORIGIN_DESCRIPTION>
+   </DDLS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
