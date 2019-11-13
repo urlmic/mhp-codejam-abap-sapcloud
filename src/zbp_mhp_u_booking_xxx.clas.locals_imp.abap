@@ -52,15 +52,25 @@
 *          et_messages = lt_messages.
 *
 *
-*      /dmo/cl_travel_auxiliary=>handle_booking_messages(
-*        EXPORTING
-*          iv_cid        = <fs_booking_update>-%cid_ref
-*          iv_travel_id  = <fs_booking_update>-travelid
-*          iv_booking_id = <fs_booking_update>-bookingid
-*          it_messages   = lt_messages
-*        CHANGING
-*          failed   = failed-booking
-*          reported = reported-booking ).
+*       zmhp_cl_travel_auxiliary_XXX=>handle_booking_messages(
+*         EXPORTING
+*           iv_cid       = <fs_booking_update>-%cid_ref
+*           iv_travel_id = <fs_booking_update>-travelid
+*           iv_booking_id = <fs_booking_update>-bookingid
+*           it_messages  = lt_messages
+*         CHANGING
+*           failed   = failed-booking
+*           reported = reported-booking ).
+*
+**      /dmo/cl_travel_auxiliary=>handle_booking_messages(
+**        EXPORTING
+**          iv_cid        = <fs_booking_update>-%cid_ref
+**          iv_travel_id  = <fs_booking_update>-travelid
+**          iv_booking_id = <fs_booking_update>-bookingid
+**          it_messages   = lt_messages
+**        CHANGING
+**          failed   = failed-booking
+**          reported = reported-booking ).
 *
 *    ENDLOOP.
 *
@@ -110,7 +120,7 @@
 *
 *      IF lt_messages IS NOT INITIAL.
 *
-*        /dmo/cl_travel_auxiliary=>handle_booking_messages(
+*       zmhp_cl_travel_auxiliary_XXX=>handle_booking_messages(
 *         EXPORTING
 *           iv_cid        = ls_booking_delete-%cid_ref
 *           iv_travel_id  = ls_booking_delete-travelid
@@ -119,6 +129,17 @@
 *         CHANGING
 *           failed   = failed-booking
 *           reported = reported-booking ).
+*
+*
+**        /dmo/cl_travel_auxiliary=>handle_booking_messages(
+**         EXPORTING
+**           iv_cid        = ls_booking_delete-%cid_ref
+**           iv_travel_id  = ls_booking_delete-travelid
+**           iv_booking_id = ls_booking_delete-bookingid
+**           it_messages   = lt_messages
+**         CHANGING
+**           failed   = failed-booking
+**           reported = reported-booking ).
 *
 *      ENDIF.
 *

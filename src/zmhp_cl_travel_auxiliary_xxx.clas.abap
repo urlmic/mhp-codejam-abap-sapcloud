@@ -18,12 +18,12 @@ PUBLIC SECTION.
     TYPES tt_travel_reported            TYPE TABLE FOR REPORTED /dmo/i_travel_u. "ZI_MHP_TRAVEL_U_XXX
 
 *    TYPES tt_booking_create             TYPE TABLE FOR CREATE    /dmo/i_booking_u.
-    TYPES tt_booking_update             TYPE TABLE FOR UPDATE    /dmo/i_booking_u.
-    TYPES tt_booking_delete             TYPE TABLE FOR DELETE    /dmo/i_booking_u.
+    TYPES tt_booking_update             TYPE TABLE FOR UPDATE    /dmo/i_booking_u. "ZI_MHP_BOOKING_U_XXX
+    TYPES tt_booking_delete             TYPE TABLE FOR DELETE    /dmo/i_booking_u. "ZI_MHP_BOOKING_U_XXX
 
-    TYPES tt_booking_failed             TYPE TABLE FOR FAILED    /dmo/i_booking_u.
-    TYPES tt_booking_mapped             TYPE TABLE FOR MAPPED    /dmo/i_booking_u.
-    TYPES tt_booking_reported           TYPE TABLE FOR REPORTED  /dmo/i_booking_u.
+    TYPES tt_booking_failed             TYPE TABLE FOR FAILED    /dmo/i_booking_u. "ZI_MHP_BOOKING_U_XXX
+    TYPES tt_booking_mapped             TYPE TABLE FOR MAPPED    /dmo/i_booking_u. "ZI_MHP_BOOKING_U_XXX
+    TYPES tt_booking_reported           TYPE TABLE FOR REPORTED  /dmo/i_booking_u. "ZI_MHP_BOOKING_U_XXX
 
     TYPES tt_bookingsupplement_failed   TYPE TABLE FOR FAILED    /dmo/i_bookingsupplement_u.
     TYPES tt_bookingsupplement_mapped   TYPE TABLE FOR MAPPED    /dmo/i_bookingsupplement_u.
